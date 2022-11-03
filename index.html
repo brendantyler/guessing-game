@@ -6,21 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Guessing Game | Brendan Galman</title>
   <link rel="stylesheet" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
 </head>
 <body>
   <div class="container" >
-  <button id="reset">I give up</button>
+  <button id="reset">Retry</button>
 
   <h2>GUESS THE NUMBER!</h3>
     <p id="prevGuess">Previous Guess: </p>
     <p id="guessCount">Chances Left: 7</p>
 
     <div class="inputGuess">
-      <input type="text" placeholder="Take a Guess!" id="guess">
+      <input type="text" maxlength="3" min="0" max="100" placeholder="Guess!" id="guess">
       <button id="checkGuess">Check</button>
     </div>
-    
-      <p id="highOrLow"></p>
-  </div>
+    <div class="highLowTable">
+      <h4>Higher Than</h4>
+      <p class="numbersGuessedLower"></p>
+      <h4>Lower Than</h4>
+      <p class="numbersGuessedHigher"></p>
+    </div>
 </body>
 </html>
