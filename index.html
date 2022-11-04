@@ -4,17 +4,21 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Guessing Game | Brendan Galman</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Guessing Game | Brendan Galman</title>  
   <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <div class="container" >
   <button id="reset">Retry</button>
 
   <h2>GUESS THE NUMBER!</h3>
+    <p>1 - 100</p>
     <p id="prevGuess">Previous Guess: </p>
-    <p id="guessCount">Chances Left: 7</p>
+    <p id="guessCount">Chances Left: 7/7</p>
+
+    <p id="notif"></p>
 
     <div class="inputGuess">
       <input type="text" maxlength="3" min="0" max="100" placeholder="Guess!" id="guess">
@@ -25,6 +29,8 @@
       <p class="numbersGuessedLower"></p>
       <h4>Lower Than</h4>
       <p class="numbersGuessedHigher"></p>
+      <h4 id="rediNumTitle"></h4>
+      <p id="rediNums"></p>
     </div>
 </body>
 </html>
