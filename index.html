@@ -9,28 +9,32 @@
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
-<body>
-  <div class="container">
+<body id="bodyRef">
+  <div id="celebrate1"></div>
+  <div id="celebrate2"></div>
+  <div id="celebrate3"></div>
+
+  <div class="container" >
   <button id="reset">Retry</button>
 
   <h2>GUESS THE NUMBER!</h3>
     <p>1 - 100</p>
     <p id="prevGuess">Previous Guess: </p>
-    <p id="guessCount">Chances Left: 7/7</p>
+    <p id="guessCount">Chances Left: 0/7</p>
 
     <p id="notif"></p>
 
     <div class="inputGuess">
-      <input type="text" maxlength="3" min="0" max="100" placeholder="Guess!" id="guess">
+      <input type="text" maxlength="" min="0" max="100" placeholder="Guess!" id="guess">
       <button id="checkGuess">Check</button>
     </div>
     <div class="highLowTable">
-      <h4>Higher Than</h4>
+      <h4 class="border">Higher Than</h4>
       <p id="numbersGuessedLower"></p>
-      <h4>Lower Than</h4>
+      <h4 class="border">Lower Than</h4>
       <p id="numbersGuessedHigher"></p>
-      <h4 id="rediNumTitle"></h4>
-      <p id="rediNums"></p>
+      <h4 id="badGuessTitle"></h4>
+      <p id="badGuesses"></p>
     </div>
 </body>
 </html>
